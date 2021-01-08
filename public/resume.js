@@ -19,7 +19,7 @@
             for (let row of dataTable.data) {
                 if (row[field.index].value !== "%null%" && row[field.index].value !== "null") {
                     url = row[field.index].value;
-                    $('#logo').wrap('<a id="test_' + row[field.index].value + '" href="' + url + '" target="_blank"></a>');
+                    $('#logo').wrap('<a href="' + url + '" target="_blank"></a>');
                 }
             };
 
