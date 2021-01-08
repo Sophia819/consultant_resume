@@ -17,8 +17,8 @@
             let field = dataTable.columns.find(column => column.fieldName === "Resume");
             
             for (let row of dataTable.data) {
-                url = row[field.index].value;
-                if (url !== "%null%" && url !== "") {
+                if (row[field.index].value !== null && row[field.index].value !== "") {
+                    url = row[field.index].value;
                     $('#logo').wrap('<a href="' + url + '" target="_blank"></a>');
                 }
             };
