@@ -18,7 +18,7 @@
             
             for (let row of dataTable.data) {
                 url = row[field.index].value;
-                if (url !== "") {
+                if (url != null && url !== "") {
                     $('#logo').wrap('<a href="' + url + '" target="_blank"></a>');
                 }
             };
